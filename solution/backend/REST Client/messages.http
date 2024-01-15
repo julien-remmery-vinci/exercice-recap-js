@@ -1,0 +1,31 @@
+@baseUrl = http://localhost:3000/messages
+
+### Read all messages
+GET {{baseUrl}}/all
+
+### Add a message
+POST {{baseUrl}}/add
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzA1MTA3OTI2LCJleHAiOjE3OTE1MDc5MjZ9.UErXed6zFFakF8oOWncM9_b5wSwlM8SDm4PMm0n9dDI
+
+{
+    "message":"Bonjour le monde"
+}
+
+### Modify a message
+PATCH {{baseUrl}}/modify/e6245dfe-b051-4b3b-8448-ac6a67265fe8
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzA1MTA3OTI2LCJleHAiOjE3OTE1MDc5MjZ9.UErXed6zFFakF8oOWncM9_b5wSwlM8SDm4PMm0n9dDI
+
+{
+    "message":"Hello world!"
+}
+
+### Remove a message
+DELETE {{baseUrl}}/remove/e6245dfe-b051-4b3b-8448-ac6a67265fe8
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzA1MTA3OTI2LCJleHAiOjE3OTE1MDc5MjZ9.UErXed6zFFakF8oOWncM9_b5wSwlM8SDm4PMm0n9dDI
+
+{
+    
+}
